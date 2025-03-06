@@ -1,346 +1,401 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-img{
-    width:400px;
-    margin-top: 5px;
-}
-ul{
-    display:flex ;
-    justify-content:space-around;
-    margin-left: 380px;
+    margin:0;
+    padding:0;
 
 }
-li{
+.logo{
+    width:200px;
+    margin-left: 100px;   
+}
+header{
+ background-color: rgb(61,205,88,0.7);
+ height:145px
+}
+.menu {
     list-style: none;
-    margin-top: -50px;
-    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
-    position: relative;
-
-}
-
-li::after {
-    content: "";
-    position: absolute;
-    bottom: 0; 
-    left: 0;
-    width: 0;
-    height: 4px;
-    background-color: rgb(139,196,63); 
-    transition: width 0.9s ease; 
-}
-
-li:hover::after {
-    width: 100%;
-}
-
-
-.dzer{
-    position: absolute;
-    top:400px;
-    font-size:55px;
-    z-index:2;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    left:360px;
-    text-align: center;
-    color:rgb(0, 0, 0);
-
-}
-
-.ig{
-    width:100%;
-    filter:blur(4px);
-    box-shadow: 3px 3px 2px;
-}
-
-.hr1{
-    height:4px;
-    width:100px;
-    background-color: rgb(139,196,63);
-    margin-top: 150px;
-    margin-left: 580px;
-
-}
-
-.patm{
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:35px;
-    margin-left: 720px;
-    margin-top: -30px;
-}
-
-.hr2{
-    height: 4px;
-    width:100px;
-    background-color: rgb(139,196,63);
-    margin-top: -20px;
-    margin-left: 1000px;
-
-}
-.di1 {
-    border-color: rgb(220,221,223);
-    border-style: solid;
-    width: 900px;
-    height: 445px; /* Ապահովում է, որ դիվը կհարմարեցնի բարձրությունը */
-    margin-left: 380px;
-    margin-top: 70px;
-    position: relative; /* Կատարում ենք վերին դիվը համահունչ */
-    padding-bottom: 100px; /* Հարմարեցված տարածություն */
-}
-
-.menq {
-    font-weight: bold;
-    color: rgb(43, 42, 42);
-    width: 400px;
-    font-size: 22px;
-}
-
-.sin {
-    width: 400px;
-    height: 550px;
-    margin-left: 500px;
-    margin-top: -495px;
-}
-
-.cont{
-    width:100%;
-    top: 700px;
-    position:absolute;
-    width:230%;
-    height:200px;
-    margin-left: -800px;
-    overflow:hidden
-   
-}
-.carer{
-    width:100%;
-    position: absolute;
-    height: auto; 
-    object-fit: cover; 
-    object-position: center; 
-    filter:brightness(40%)
-
-}
-
-.gorcel{
-    position: absolute;
-    z-index:2;
-    left:680px;
-    color: rgb(139,196,63);
-    font-weight: bold;
-    font-size: 33px;
-    top:80px;
-    text-shadow: 2px 2px 2px ;
-
-}
-
-.hr3{
-    height:4px;
-    width:100px;
-    background-color: rgb(139,196,63);
-    margin-top: 500px;
-    margin-left: 150px;
-
-} 
-
-
-.car{
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:35px;
-    margin-left: 300px;
-    margin-top: -25px;
-}
-
-.hr4{
-    height:4px;
-    width:100px;
-    background-color: rgb(139,196,63);
-    margin-top: -17px;
-    margin-left: 650px;
-    position: absolute;
-} 
-.b{
-    border: 2px solid rgb(206, 207, 209);
-    height:315px;
-    margin-left: -180px;
-    width:550px;
-    margin-top: 60px;
-    box-shadow: 2px 5px 8px
-}
-
-.bet1{
-    position: absolute;
-    top:1130px;
-    width:260px;
-    height:315px
-  
-}
-.pnt{
-   margin-left: 260px;
-   margin-top: 5px;
-   font-size: 20px;
-   font-weight: bold;
-   color:rgb(130, 179, 66)
-}
-
-.c22{
-    border: 2px solid rgb(206, 207, 209);
-    height:315px;
-    margin-left: 510px;
-    width:550px;
-    margin-top: -320px;
-    box-shadow: 2px 5px 8px
-}
-
-.dic{
-    position: absolute;
-    top:1130px;
-    width:260px;
-    height:315px
-  
-}
-.nyut{
-   margin-left: 260px;
-   margin-top: 5px;
-   font-size: 20px;
-   font-weight: bold;
-   color:rgb(130, 179, 66)
-}
-
-.d3{
-    border: 2px solid rgb(206, 207, 209);
-    height:315px;
+    margin-top: -120px;
     margin-left: 200px;
-    width:550px;
+    color:rgb(240,240,240)
+}
+.menu li:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color:black;
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color:rgb(240,240,240)
+
+}
+.back{
+    margin-top: 100px;
+    width:800px;
+    height:500px;
+    object-fit:scale-down;
+}
+
+.bajin{
+    height:20px;
+    width:100%;
+    background-color:rgb(2,158,33);
+    
+    
+}
+.baj1{
+    background-color:rgb(106,106,106) ;
+    width:90%;
+    height:600px;
+    margin-top: 110px;
+    margin-left: 80px;
+    box-shadow:2px 2px 18px black;
+}
+
+.img{
+    width:700px;
+    height:500px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-left: 50px;
+    box-shadow: 2px 3px 10px
+}
+
+.a{
+    color:white;
+    margin-left: 780px;
+    margin-top: -480px;
+    font-size:42px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow:2px 2px 3px black
+
+    
+}
+.a:hover{
+    transition: 0.6s;
+    cursor: pointer;
+    color:rgb(153,153,153)
+}
+
+
+.bajin2{
+    height:1000px;
+    width:98%;
+   
+   margin-top: 100px;
+   margin-left: 20px;
+}
+
+.b{
+    margin-left: 220px;
+    font-size: 38px;
+    color:black;
+    position: absolute;
     margin-top: 70px;
-    box-shadow: 2px 5px 8px
+    border-style: inset;
 }
 
-.avazz{
-    position: absolute;
-    top:1518px;
-    width:260px;
-    height:315px
-  
-}
-.kay{
-   margin-left: 260px;
-   margin-top: 5px;
-   font-size: 20px;
-   font-weight: bold;
-   color:rgb(130, 179, 66)
-}
-   
-
-
-.foot{
-    width:197%;
-    margin-left: -500px;
-    height:440px;
-    margin-top: 150px;
-    object-fit:cover;
-    filter: brightness(20%);
+.i1{
+    width:160px;
+    margin-top: 180px;
+    margin-left: 730px;
 }
 
-.logos{
-     position: absolute;
-     z-index:2;
-     width:230px;
-     top:2080px;
-     left:-150px
+.seys{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 70px;
+
+    
 }
+.seys:hover{
+    transform: scale(1.1);
+}
+.i2{
+    width:160px;
+    margin-top: 170px;
+    margin-left: 250px;
+    
+}
+
+.naxagic{
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 8px;
+
 
    
-.ver1{
-    height:360px;
-    width:2px;
-    background-color: rgb(90, 119, 52);
-    position: absolute;
-    z-index:2;
-    top:2035px;
-    left:150px
+}
+.naxagic:hover{
+    transform: scale(1.1);
 }
 
-
-.add{
-    width:50px;
+.i3{
     position: absolute;
-    top:2080px;
-    left:200px
+    width:160px;
+    margin-top: -240px;
+    margin-left: 1200px;
+    
 }
 
-.addr{
-    position: absolute;
-    top:2100px;
-    left:250px;
-    color:white;
-    font-weight: bold;
-    font-size:20px
-}
+.kons{
+    font-size: 30px;
+    margin-left: 1100px;
+    margin-top: -60px;
 
-.emik{
-  position: absolute;
-  z-index:2;
-  top:2170px;
-  width:50px;
-  left:200px
-
-}
-
-.berd{
-    position: absolute;
-    top:2190px;
-    left:250px;
-    color:white;
-    font-weight: bold;
-    font-size:20px
-}
-
-.telp{
-    position: absolute;
-    z-index:2;
-    top:2250px;
-    width:50px;
-    left:200px
   
+}
+.kons:hover{
+    transform: scale(1.1);
+
+
+}
+
+.mejtex{
+    width:120px;
+    margin-left: 750px;
+    margin-top: -350px;
+    position: absolute;
+    box-shadow:2px 3px 20px rgb(95, 255, 47)
+}
+
+.bajin3{
+    height:1500px;
+    background-color: rgb(106,106,106);
+}
+.c{
+    color:beige;
+    position: absolute;
+    margin-left: 620px;
+    margin-top: 70px;
+    font-size:40px;
+}
+
+.asx1{
+    width:520px;
+    margin-top: 250px;
+    margin-left: 80px;
+}
+
+.asx2{
+    width:400px;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 80px;
+    box-shadow:2px 2px 18px black;
+
+}
+
+.asx3{
+    width:400px;
+    margin-top: 250px;
+    margin-left: 500px;
+    box-shadow:2px 2px 18px black;
+
+}
+
+.asx4{
+    width:400px;
+    margin-top: 310px;
+    margin-left: 80px;
+    box-shadow:2px 2px 18px black;
+
+}
+.asx5{
+    position: absolute;
+    width:400px;
+    margin-top: 90px;
+    margin-left: 20px;
+    box-shadow:2px 2px 18px black;
+
+}
+.asx6{
+    width:520px;
+    margin-top: -500px;
+    margin-left: 1000px;
+}
+
+.bajin3>*:hover {
+    transform:scale(1.1); 
+  }
+
+  .c:hover{
+    color:rgb(19, 18, 18);
+  }
+
+  .foot{
+    height:580px;
+    background-color: black;
+  }
+
+
+  .kap{
+    color: aliceblue;
+    margin-left: 650px;
+    margin-top: 50px;
+    position: absolute;
+    font-size: 40px;
+    box-shadow: 2px 2px 10px ;
+}
+ol{
+    position: absolute;
+    margin-top: 160px;
+    line-height: 60px;
+    font-size:33px;
+    margin-left: 80px;
+}
+ol li{
+    color:white;
+    list-style:square;
+}
+.map{
+    margin-left: 1000px;
+    margin-top: 160px;
+    position: absolute;
+
+}
+.dd{
+    width:100%;
+    height:5px;
+    background-color:rgb(2,158,33);
+    margin-top: -50px;
+}
+
+.pasht{
+    color:white;
+    text-align: center;
+}
+
+
+
+/* Հարմարեցում iPhone 12-ի և նոր մոդելների համար */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    body {
+      background-color: #e0f7fa; /* Հատուկ ֆոն iOS սարքերի համար */
+      body {
+        background-color: #f0f0f0;
+    }
+   
+    header{
+        width:1300px
+    } 
+    li{
+        margin-left:100px;
+        
+    }
+    .li1{
+        margin-left: 500px;
+    }
+    .li3{
+        margin-left: 200px;
+    }
+    .bajin{
+        width:1300px
+    }
+    .baj1{
+        width:800px;
+        margin-left: -200px;
+    }
+    .a{
+        margin-top: 160px;
+        margin-left: 170px;
+        color:rgb(106,106,106);
+        font-size: 29px;
+        text-align: center;
+        max-width: 520px;
+    }
+    .b{
+        margin-top: 400px;
+        margin-left: 30px;
+        
+    }
+    .i1{
+        margin-top: 600px;
+        margin-left: 300px;
+    }
+
+    .seys{
+        margin-left: 500px;
+    }
+    .i2{
+        position: absolute;
+        margin-top: -230px;
+        margin-left: 20px;
+    }
+    .naxagic{
+        margin-left: 500px;
+        margin-top: -10px;
+    }
+    
+    .i3{
+        margin-left: 600px;
+        margin-top: -200px;
+    }
+    .kons{
+        margin-left: 600px;
+        margin-top: -50px;
+    }
+
+    .mejtex{
+        margin-left: 180px;
+        margin-top: -200px;
+    }
+    .bajin3{
+        width:1300px
+    }
+    .c{
+        margin-left: 50px;
+    }
+    .asx1{
+        width:350px
+    }
+    .asx2{
+        margin-top: 180px;
+    }
+    .asx3{
+        margin-top: -60px;
+        margin-left: 80px;
+    }
+    .asx4{
+        margin-top: -200px;
+        margin-left: 50px;
+    }
+    .asx5{
+        margin-top: 30px;
+        margin-left: -400px;
+    }
+    .asx6{
+        margin-left: 90px;
+        margin-top: 110px;
+    }
+    .foot{
+        width:1200px
+    }
+    .kap{
+        margin-left: 150px;
+    }
+    ol{
+        margin-left: 20px;
+    }
+    .map{
+        margin-left: 600px;
+    }
+    .container {
+        padding: 10px;
+    }
+    
   }
   
-  .tel0{
-    position: absolute;
-    top:2270px;
-    left:250px;
-    color:white;
-    font-weight: bold;
-    font-size:20px
-}
-
-.ver2{
-    height:360px;
-    width:2px;
-    background-color: rgb(90, 119, 52);
-    position: absolute;
-    z-index:2;
-    top:2035px;
-    left:730px
-}
-
-
-.mapp{
-        position: absolute;
-        top:2080px;
-        left:800px
+  /* iPad սարքերին համապատասխան */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      background-color: #e8f5e9; /* Փոփոխություն ֆոնին */
+    }
+  }
+  
 }
